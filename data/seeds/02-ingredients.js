@@ -11,6 +11,7 @@ exports.seed = function(knex) {
         {name: 'Pasta Sauce'},
         {name: 'Meatballs'},
         {name: 'Beans'},
+        {name: 'Love'},
       ]);
     });
 };

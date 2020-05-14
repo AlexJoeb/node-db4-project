@@ -22,27 +22,6 @@ The requirements for the system, as stated by the client are:
 
 **Hint**: Before writing any code, write out all desired tables in the data model and determine all relationships between tables.
 
-- There should be three tables. First table is going to be for the recipies. Contains recipe name and id. Second table will be for ingredients, holds ingredient name and id. Third table will be the bridge between them holding ingredient id, recipe id, quantity (float).
-- Another table for instructions contains recipe id, step_number, instruction
-
-*Tables:*
-1. Recipes:
-    -   id
-    -   name
-2. Ingredients:
-    -   id
-    -   name
-3. RecipeIngredients:
-    -   id
-    -   recipe_id
-    -   ingredient_id
-    -   quantity
-4. Instructions:
-    -   id
-    -   recipe_id
-    -   step_number
-    -   instruction
-
 ### Migrations and Seeds
 
 - Write a migration file that creates all tables necessary to model this data
