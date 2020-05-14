@@ -62,3 +62,9 @@ typings/
 
 # Mac Cruft
 .DS_Store
+
+# Node Modules
+/node_modules
+
+# Environment Files
+*.env

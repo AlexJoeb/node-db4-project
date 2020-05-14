@@ -17,9 +17,31 @@ The requirements for the system, as stated by the client are:
 - have a way to manage ingredients.
 - a **recipe** could have more than one **ingredient** and the same **ingredient** can be used in multiple recipes. Examples are _"cup of corn flour"_ or _"gram of butter"_.
 - when saving the ingredients for a **recipe** capture the quantity required for that **ingredient** as a floating number.
+    
 - have a way to save step by step instructions for preparing a recipe.
 
 **Hint**: Before writing any code, write out all desired tables in the data model and determine all relationships between tables.
+
+- There should be three tables. First table is going to be for the recipies. Contains recipe name and id. Second table will be for ingredients, holds ingredient name and id. Third table will be the bridge between them holding ingredient id, recipe id, quantity (float).
+- Another table for instructions contains recipe id, step_number, instruction
+
+*Tables:*
+1. Recipes:
+    -   id
+    -   name
+2. Ingredients:
+    -   id
+    -   name
+3. RecipeIngredients:
+    -   id
+    -   recipe_id
+    -   ingredient_id
+    -   quantity
+4. Instructions:
+    -   id
+    -   recipe_id
+    -   step_number
+    -   instruction
 
 ### Migrations and Seeds
 
